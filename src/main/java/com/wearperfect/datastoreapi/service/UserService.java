@@ -1,5 +1,10 @@
 package com.wearperfect.datastoreapi.service;
 
-public interface UserService {
+import com.wearperfect.datastoreapi.models.User;
 
+public interface UserService {
+	
+	public User getUserDetails(Long userId);
+	
+	public User getUserDetails(String username);
 }
